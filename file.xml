@@ -1,0 +1,12 @@
+<testsuite name="Mocha Tests" tests="10" failures="0" errors="0" skipped="1" timestamp="Wed, 30 Nov 2016 22:58:58 GMT" time="0.077">
+<testcase classname="sinon tests student.dropClass" name="should call the callback" time="0.007"/>
+<testcase classname="sinon tests student.dropClass" name="should call the callback and log to the console" time="0.001"/>
+<testcase classname="sinon tests student.dropClass" name="should call the callback even if it is a method of an object" time="0.004"/>
+<testcase classname="sinon tests student with stubs" name="should call a stubbed method" time="0.004"/>
+<testcase classname="sinon tests student with stubs" name="should return true when the class is not full" time="0.003"/>
+<testcase classname="sinon tests student with mocks" name="mocks schedule" time="0.01"/>
+<testcase classname="number tests isEven" name="should return true when number is even" time="0"/>
+<testcase classname="number tests isEven" name="should return false when number is odd" time="0"/>
+<testcase classname="number tests add with setup/teardown" name="should be 12 when adding 7 to 5" time="0.001"/>
+<testcase classname="number tests add with setup/teardown" name="should be 12 when adding 7 to 5" time="0"><skipped/></testcase>
+</testsuite>

@@ -2,8 +2,15 @@
 
 let chai = require('chai'),
     sinon = require('sinon'),
-    expect = chai.expect;
-chai.should();
+    chaiAsPromised = require('chai-as-promised'),
+    Promise = require('bluebird'),
+    expect = chai.expect,
+    should = chai.should();
+
+chai.use(chaiAsPromised);
+
+// gives us .eventually() which lets us check to see whether
+// a promise resolves.
 
 describe('sinon tests', function () {
     let student, schedule;

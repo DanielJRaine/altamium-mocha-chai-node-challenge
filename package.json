@@ -4,7 +4,9 @@
   "description": "Code challenge for Altamium using Mocha, Chai, and Mochawesome",
   "main": "index.js",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "sinon": "^1.17.6"
   },
   "devDependencies": {
@@ -12,7 +14,9 @@
     "gulp-mocha": "^3.0.1",
     "gulp-util": "^3.0.7",
     "mocha": "^3.2.0",
-    "mochawesome": "^1.5.4"
+    "mocha-multi": "^0.9.1",
+    "mochawesome": "^1.5.4",
+    "uuid": "^3.0.1"
   },
   "scripts": {
     "test": "mocha"

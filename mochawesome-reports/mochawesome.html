@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">altamium-mocha-chai-node-challenge</h1>
+          <h3 class="report-date">Wednesday, November 30 2016, 06:24pm</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">979<span>MS</span></li>
+                <li class="qs-item summary-suites" title="Suites">7</li>
+                <li class="qs-item summary-tests" title="Tests">10</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">9</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">1</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">979<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">7</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">10</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">9</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">10% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="a3bec144-4d9b-459f-a8c7-571040229ae3" class="suite has-suites">
+            <h3 class="suite-title">sinon tests</h3>
+            <h5 class="suite-filename">/test/sinon-test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="f9ca8bcf-ed87-4f72-881b-d55f368e70bd" class="suite has-tests has-passed">
+            <h3 class="suite-title">student.dropClass</h3>
+            <h5 class="suite-filename">/test/sinon-test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f9ca8bcf-ed87-4f72-881b-d55f368e70bd" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">13 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f9ca8bcf-ed87-4f72-881b-d55f368e70bd-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f9ca8bcf-ed87-4f72-881b-d55f368e70bd-test-list" class="list-group test-list collapse in">
+                    <div id="776901a3-2dfd-4c4f-a104-c4d3921f8d22" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the callback
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#776901a3-2dfd-4c4f-a104-c4d3921f8d22 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">6 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">let</span> spy = sinon.spy();<br>student.dropClass(<span class="hljs-number">1</span>, spy);<br>spy.called.should.be.true;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="11b4442b-9521-4024-8160-319dc91d442f" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the callback and log to the console
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#11b4442b-9521-4024-8160-319dc91d442f > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onClassDropped</span>(<span class="hljs-params"></span>) </span>{<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"onClassDropped was called"</span>);<br>}<br><span class="hljs-keyword">let</span> spy = sinon.spy(onClassDropped);<br>student.dropClass(<span class="hljs-number">1</span>, spy);<br>spy.called.should.be.true;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="6d01f8e1-1866-464d-8c9d-3bebcb99aa7b" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call the callback even if it is a method of an object
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6d01f8e1-1866-464d-8c9d-3bebcb99aa7b > .test-code.collapse">Code</button>
+              <span class="test-duration fast">6 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">sinon.spy(schedule, <span class="hljs-string">'dropClass'</span>);<br>student.dropClass(<span class="hljs-number">1</span>, schedule);<br>schedule.dropClass.called.should.be.true;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="9ab5a7bb-5718-4b65-80e8-a5c4f9b69443" class="suite has-tests has-passed">
+            <h3 class="suite-title">student with stubs</h3>
+            <h5 class="suite-filename">/test/sinon-test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="9ab5a7bb-5718-4b65-80e8-a5c4f9b69443" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">7 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#9ab5a7bb-5718-4b65-80e8-a5c4f9b69443-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="9ab5a7bb-5718-4b65-80e8-a5c4f9b69443-test-list" class="list-group test-list collapse in">
+                    <div id="1ac133b1-2739-4983-a0bb-58e55c6e2479" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should call a stubbed method
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#1ac133b1-2739-4983-a0bb-58e55c6e2479 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">5 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">let</span> stub = sinon.stub(schedule); <span class="hljs-comment">// goes through every method on this object and replaces with a stub function</span><br>student.dropClass(<span class="hljs-number">1</span>, stub.dropClass);<br>           <span class="hljs-comment">// student.dropClass(1, stub); // since stub has all the methods, this is valid too.</span><br>stub.dropClass.called.should.be.true; <span class="hljs-comment">// stubs don't call the inner implementation of the stubbed method'</span></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="830c1ba3-7615-4c8f-b0e6-173bd44cba31" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return true when the class is not full
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#830c1ba3-7615-4c8f-b0e6-173bd44cba31 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">2 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">let</span> stub = sinon.stub(schedule);<br>stub.classIsFull.returns(<span class="hljs-literal">false</span>);<br><span class="hljs-keyword">let</span> returnVal = student.addClass(stub)<br>returnVal.should.be.true;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="f9953de8-813b-4682-a0e0-67c5d2358039" class="suite has-tests has-passed">
+            <h3 class="suite-title">student with mocks</h3>
+            <h5 class="suite-filename">/test/sinon-test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f9953de8-813b-4682-a0e0-67c5d2358039" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">5 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f9953de8-813b-4682-a0e0-67c5d2358039-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f9953de8-813b-4682-a0e0-67c5d2358039-test-list" class="list-group test-list collapse in">
+                    <div id="568c0f9b-ca09-4b53-978d-b1aa3511aabd" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              mocks schedule
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#568c0f9b-ca09-4b53-978d-b1aa3511aabd > .test-code.collapse">Code</button>
+              <span class="test-duration fast">5 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">let</span> mockObj = sinon.mock(schedule);<br>            <span class="hljs-comment">//  let expectation = mockObj.expects('classIsFull').twice();</span><br><span class="hljs-keyword">let</span> expectation = mockObj.expects(<span class="hljs-string">'classIsFull'</span>).once();             <br>student.addClass(schedule);<br>expectation.verify();</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="f38d061a-2b3f-4a01-af5d-b6d09d24e3ed" class="suite has-suites">
+            <h3 class="suite-title">number tests</h3>
+            <h5 class="suite-filename">/test/test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="f85bb41b-198a-48f4-a120-7f1e5c750c71" class="suite has-tests has-passed">
+            <h3 class="suite-title">isEven</h3>
+            <h5 class="suite-filename">/test/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f85bb41b-198a-48f4-a120-7f1e5c750c71" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f85bb41b-198a-48f4-a120-7f1e5c750c71-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f85bb41b-198a-48f4-a120-7f1e5c750c71-test-list" class="list-group test-list collapse in">
+                    <div id="4e35152c-83ce-4446-8ea6-39a9e7c2eee9" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return true when number is even
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4e35152c-83ce-4446-8ea6-39a9e7c2eee9 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">isEven(4).should.be.true;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="8600e647-b4ee-49af-8f47-a8998c2e4055" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return false when number is odd
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8600e647-b4ee-49af-8f47-a8998c2e4055 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">expect(isEven(5)).to.be.false;</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="a9a2a469-aefd-41d6-8188-865495f909b1" class="suite has-tests has-passed has-pending">
+            <h3 class="suite-title">add with setup/teardown</h3>
+            <h5 class="suite-filename">/test/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="a9a2a469-aefd-41d6-8188-865495f909b1" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="1" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">1</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#a9a2a469-aefd-41d6-8188-865495f909b1-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="a9a2a469-aefd-41d6-8188-865495f909b1-test-list" class="list-group test-list collapse in">
+                    <div id="d568e7e7-0dd5-4ae9-a831-dbbd3152b74f" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be 12 when adding 7 to 5
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d568e7e7-0dd5-4ae9-a831-dbbd3152b74f > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">add(num, 7).should.equal(12);</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="ec53c018-4c14-4c3c-bed2-db8da9805eda" class="list-group-item test pending">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should be 12 when adding 7 to 5
+            </h4>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#a3bec144-4d9b-459f-a8c7-571040229ae3" class="nav-menu-item-link">sinon tests</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#f9ca8bcf-ed87-4f72-881b-d55f368e70bd" class="nav-menu-item-link has-passes">student.dropClass</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#9ab5a7bb-5718-4b65-80e8-a5c4f9b69443" class="nav-menu-item-link has-passes">student with stubs</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#f9953de8-813b-4682-a0e0-67c5d2358039" class="nav-menu-item-link has-passes">student with mocks</a>
+            </li>
+                  </ul>
+            </li>
+                <li class="nav-menu-item">
+                <a href="#f38d061a-2b3f-4a01-af5d-b6d09d24e3ed" class="nav-menu-item-link">number tests</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#f85bb41b-198a-48f4-a120-7f1e5c750c71" class="nav-menu-item-link has-passes">isEven</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#a9a2a469-aefd-41d6-8188-865495f909b1" class="nav-menu-item-link has-pending">add with setup/teardown</a>
+            </li>
+                  </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>

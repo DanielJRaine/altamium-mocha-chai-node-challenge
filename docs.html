@@ -1,0 +1,72 @@
+    <section class="suite">
+      <h1>sinon tests</h1>
+      <dl>
+        <section class="suite">
+          <h1>student.dropClass</h1>
+          <dl>
+            <dt>should call the callback</dt>
+            <dd><pre><code>let spy = sinon.spy();
+student.dropClass(1, spy);
+spy.called.should.be.true;</code></pre></dd>
+            <dt>should call the callback and log to the console</dt>
+            <dd><pre><code>function onClassDropped() {
+    console.log(&quot;onClassDropped was called&quot;);
+}
+let spy = sinon.spy(onClassDropped);
+student.dropClass(1, spy);
+spy.called.should.be.true;</code></pre></dd>
+            <dt>should call the callback even if it is a method of an object</dt>
+            <dd><pre><code>sinon.spy(schedule, 'dropClass');
+student.dropClass(1, schedule);
+schedule.dropClass.called.should.be.true;</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>student with stubs</h1>
+          <dl>
+            <dt>should call a stubbed method</dt>
+            <dd><pre><code>let stub = sinon.stub(schedule); // goes through every method on this object and replaces with a stub function
+student.dropClass(1, stub.dropClass);
+           // student.dropClass(1, stub); // since stub has all the methods, this is valid too.
+stub.dropClass.called.should.be.true; // stubs don't call the inner implementation of the stubbed method'</code></pre></dd>
+            <dt>should return true when the class is not full</dt>
+            <dd><pre><code>let stub = sinon.stub(schedule);
+stub.classIsFull.returns(false);
+let returnVal = student.addClass(stub)
+returnVal.should.be.true;</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>student with mocks</h1>
+          <dl>
+            <dt>mocks schedule</dt>
+            <dd><pre><code>let mockObj = sinon.mock(schedule);
+            //  let expectation = mockObj.expects('classIsFull').twice();
+let expectation = mockObj.expects('classIsFull').once();             
+student.addClass(schedule);
+expectation.verify();</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>
+    <section class="suite">
+      <h1>number tests</h1>
+      <dl>
+        <section class="suite">
+          <h1>isEven</h1>
+          <dl>
+            <dt>should return true when number is even</dt>
+            <dd><pre><code>isEven(4).should.be.true;</code></pre></dd>
+            <dt>should return false when number is odd</dt>
+            <dd><pre><code>expect(isEven(5)).to.be.false;</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>add with setup/teardown</h1>
+          <dl>
+            <dt>should be 12 when adding 7 to 5</dt>
+            <dd><pre><code>add(num, 7).should.equal(12);</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>
