@@ -4,10 +4,12 @@
   "description": "Code challenge for Altamium using Mocha, Chai, and Mochawesome",
   "main": "index.js",
   "dependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "sinon": "^1.17.6"
   },
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "mochawesome": "^1.5.4"
   },
   "scripts": {
     "test": "mocha"
