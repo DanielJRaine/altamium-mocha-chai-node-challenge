@@ -10,6 +10,7 @@
     "sinon": "^1.17.6"
   },
   "devDependencies": {
+    "chai-http": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-mocha": "^3.0.1",
     "gulp-util": "^3.0.7",
