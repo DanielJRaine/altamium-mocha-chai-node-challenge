@@ -1,19 +1,18 @@
 'use strict';
-
+// jshint strict: global, esversion: 6
 /// <reference path="typings/mocha/mocha.d.ts" />
 
-// jshint expr: true
 let chai = require('chai'),
     expect = chai.expect;
 
 chai.should();
 
-describe('number tests', function() {
+describe('number tests', function () {
     function isEven(num) {
         return num % 2 === 0;
     }
 
-    describe('isEven', function() {
+    describe('isEven', function () {
         it('should return true when number is even', function () {
             isEven(4).should.be.true;
         });
