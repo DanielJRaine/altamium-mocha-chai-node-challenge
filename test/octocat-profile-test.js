@@ -17,13 +17,18 @@ describe('Github Developer API', function(){
     // });
     describe('GET /users/:username/repos', () => {
         it('Lists all public repositories for the specified user.', (done) => {
-            chai.request('https://www.github.com')
+            this.timeout(10000);
+            chai.request('https://api.github.com')
                     .get('/users/octocat/repos')
-                    .end((err, res) => {
+                    .then((res) => {
                         res.should.have.status(200);
                         res.body.should.be.a('array');  
                         done();
-                    });
+                    })
+                    .catch((err) => {
+                        throw err;
+                    })
+                    ;
         });
     });
 });
