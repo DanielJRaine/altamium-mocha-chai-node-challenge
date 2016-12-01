@@ -12,9 +12,6 @@ let chai = require('chai'),
 chai.use(chaiHttp);
 
 describe('Github Developer API', function(){
-    // beforeEach(function(){
-    //     chai.request('https://www.github.com');
-    // });
     describe('GET /users/:username/repos', () => {
         it('Lists all public repositories for the specified user.', (done) => {
             this.timeout(10000);
@@ -29,6 +26,14 @@ describe('Github Developer API', function(){
                         throw err;
                     })
                     ;
+        });
+    });
+});
+
+describe('GitHub User Profile', function(){
+    it('Displays a profile picture', function(){
+        browser.get('https://www.github.com/octocat', function(){
+            
         });
     });
 });
