@@ -1,6 +1,10 @@
 'use strict';
+// CLI command:
+
+// phantomjs mocha-phantomjs-core.js <TESTS> <REPORTER> <CONFIG as JSON>
 
 // jshint esversion: 6, strict: global, node: true, mocha: true
+
 
 let chai = require('chai'),
     chaiHttp = require('chai-http'),
@@ -26,14 +30,6 @@ describe('Github Developer API', function(){
                         throw err;
                     })
                     ;
-        });
-    });
-});
-
-describe('GitHub User Profile', function(){
-    it('Displays a profile picture', function(){
-        browser.get('https://www.github.com/octocat', function(){
-            
         });
     });
 });

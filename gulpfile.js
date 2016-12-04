@@ -2,23 +2,32 @@
 
 let gulp = require('gulp'),
     mocha = require('gulp-mocha'),
-    gutil = require('gulp-util');
+    gutil = require('gulp-util'),
+    mochaPhantomJS = require('gulp-mocha-phantomjs');
 
+let reporterOptions = {
+    list: "-", 
+    mochawesome: {
+        stdout: "/tmp/mocha-multi.Progress.out",
+        options: {
+            verbose: true,
+            reportDir: 'customReportDir',
+            reportName: 'customReportName',
+            reportTitle: 'customReportTitle',
+            inlineAssets: true
+        }
+    }
+};
+
+gulp.task('phantom', function() {
+    return gulp.src(['test/*.js'], {read: false})
+        .pipe(mochaPhantomJS({
+                     reporter: 'spec'
+                    }))
+        .on('error', gutil.log);
+});
 
 gulp.task('mocha', function(){
-    var reporterOptions = {
-        list: "-", 
-        mochawesome: {
-            stdout: "/tmp/mocha-multi.Progress.out",
-            options: {
-                verbose: true,
-                reportDir: 'customReportDir',
-                reportName: 'customReportName',
-                reportTitle: 'customReportTitle',
-                inlineAssets: true
-            }
-        }
-    };
     return gulp.src(['test/*.js'], {read: false})
         .pipe(mocha({
                      reporter: 'mocha-multi',
@@ -32,5 +41,10 @@ gulp.task('watch-mocha', function() {
     gulp.watch(['./**/*.js', 'test/**/*.js'], ['mocha']);
 });
 
-gulp.task('default', ['watch-mocha']);
+gulp.task('watch-phantom', function() {
+    gulp.run('phantom');    
+    gulp.watch(['./**/*.js', 'test/**/*.js'], ['phantom']);
+})
+
+gulp.task('default', ['watch-mocha', 'watch-phantom']);
 
