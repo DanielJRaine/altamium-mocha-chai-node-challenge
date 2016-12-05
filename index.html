@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">altamium-mocha-chai-node-challenge</h1>
+          <h3 class="report-date">Monday, December 5 2016, 11:22am</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">3.727<span>S</span></li>
+                <li class="qs-item summary-suites" title="Suites">4</li>
+                <li class="qs-item summary-tests" title="Tests">4</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">4</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">3.727<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="f2f8148f-7c2a-4313-907d-2ef23e17b252" class="suite has-suites">
+            <h3 class="suite-title">Github Developer API</h3>
+            <h5 class="suite-filename">/test/octocat-profile-test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="2f1674bb-0694-4ccd-9f91-ea3f629fdee3" class="suite has-tests has-passed">
+            <h3 class="suite-title">GET /users/:username/repos</h3>
+            <h5 class="suite-filename">/test/octocat-profile-test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="2f1674bb-0694-4ccd-9f91-ea3f629fdee3" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">266 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#2f1674bb-0694-4ccd-9f91-ea3f629fdee3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="2f1674bb-0694-4ccd-9f91-ea3f629fdee3-test-list" class="list-group test-list collapse in">
+                    <div id="b4df4c1a-31f0-4040-bda2-0b149883ee6f" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Lists all public repositories for the specified user.
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b4df4c1a-31f0-4040-bda2-0b149883ee6f > .test-code.collapse">Code</button>
+              <span class="test-duration slow">266 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">chai.request(<span class="hljs-string">'https://api.github.com'</span>)<br>        .get(<span class="hljs-string">'/users/octocat/repos'</span>)<br>        .then((res) =&gt; {<br>            expect(res.status).to.be.equal(<span class="hljs-number">200</span>);<br>            expect(res.body).to.be.a(<span class="hljs-string">'array'</span>);<br>            done();<br>        })<br>        .catch((err) =&gt; {<br>            <span class="hljs-keyword">throw</span> err;<br>        });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="80b0470b-9d5d-4ed6-a03b-36d6d354cf80" class="suite has-suites">
+            <h3 class="suite-title">Github Octocat Profile</h3>
+            <h5 class="suite-filename">/test/octocat-profile-test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="d1bd65bc-6151-4d4d-8840-8de0a4160d2a" class="suite has-tests has-passed">
+            <h3 class="suite-title">Avatar</h3>
+            <h5 class="suite-filename">/test/octocat-profile-test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d1bd65bc-6151-4d4d-8840-8de0a4160d2a" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">3.410 s</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d1bd65bc-6151-4d4d-8840-8de0a4160d2a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d1bd65bc-6151-4d4d-8840-8de0a4160d2a-test-list" class="list-group test-list collapse in">
+                    <div id="d2654030-a926-416c-be1c-276b1ebe5593" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Exists
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d2654030-a926-416c-be1c-276b1ebe5593 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">1.327 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">setTimeout(done, <span class="hljs-number">10000</span>);            <br>request({uri:<span class="hljs-string">'http://github.com/octocat'</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res, body</span>) </span>{<br>    jsdom.env({<br>        html: res.body,<br>        scripts: [<br>        <span class="hljs-string">'http://code.jquery.com/jquery-1.5.min.js'</span><br>        ],<br>        done: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, window</span>) </span>{<br>            <span class="hljs-keyword">let</span> $ = <span class="hljs-built_in">window</span>.jQuery;<br>            <span class="hljs-keyword">let</span> avatar = $(<span class="hljs-string">'.vcard-avatar'</span>).html();<br>            expect(avatar).to.exist;<br>            done();<br>    }});<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="c7b90c50-cc66-4b62-a67b-1e63d5d20a32" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Is contained within an image tag
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c7b90c50-cc66-4b62-a67b-1e63d5d20a32 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">1.39 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">setTimeout(done, <span class="hljs-number">10000</span>);            <br>request({uri:<span class="hljs-string">'http://github.com/octocat'</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res, body</span>) </span>{<br>    jsdom.env({<br>        html: res.body,<br>        scripts: [<br>        <span class="hljs-string">'http://code.jquery.com/jquery-1.5.min.js'</span><br>        ],<br>        done: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, window</span>) </span>{<br>            <span class="hljs-keyword">let</span> $ = <span class="hljs-built_in">window</span>.jQuery;<br>            <span class="hljs-keyword">let</span> avatar = $(<span class="hljs-string">'.vcard-avatar'</span>).html();<br>            expect(avatar).to.include(<span class="hljs-string">'&lt;img'</span>);<br>            done();<br>    }});<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="bbe2e4f1-1c41-4fd7-b4d7-5d56555c868a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Contain&#x27;s the Octocat&#x27;s image from the correct source
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#bbe2e4f1-1c41-4fd7-b4d7-5d56555c868a > .test-code.collapse">Code</button>
+              <span class="test-duration slow">1.44 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">setTimeout(done, <span class="hljs-number">10000</span>);<br>request({uri:<span class="hljs-string">'http://github.com/octocat'</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res, body</span>) </span>{<br>    jsdom.env({<br>        html: res.body,<br>        scripts: [<br>        <span class="hljs-string">'http://code.jquery.com/jquery-1.5.min.js'</span><br>        ],<br>        done: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, window</span>) </span>{<br>            <span class="hljs-keyword">let</span> $ = <span class="hljs-built_in">window</span>.jQuery;<br>            <span class="hljs-keyword">let</span> avatar = $(<span class="hljs-string">'.vcard-avatar'</span>).html();<br>            expect(avatar).to.include(<span class="hljs-string">'https://avatars1.githubusercontent.com/u/583231?v=3&amp;amp;s=460'</span>);<br>            done();<br>    }});<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#f2f8148f-7c2a-4313-907d-2ef23e17b252" class="nav-menu-item-link">Github Developer API</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#2f1674bb-0694-4ccd-9f91-ea3f629fdee3" class="nav-menu-item-link has-passes">GET /users/:username/repos</a>
+            </li>
+                  </ul>
+            </li>
+                <li class="nav-menu-item">
+                <a href="#80b0470b-9d5d-4ed6-a03b-36d6d354cf80" class="nav-menu-item-link">Github Octocat Profile</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#d1bd65bc-6151-4d4d-8840-8de0a4160d2a" class="nav-menu-item-link has-passes">Avatar</a>
+            </li>
+                  </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
