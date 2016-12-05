@@ -1,7 +1,4 @@
 'use strict';
-// CLI command:
-
-// phantomjs mocha-phantomjs-core.js <TESTS> <REPORTER> <CONFIG as JSON>
 
 // jshint esversion: 6, strict: global, node: true, mocha: true
 
