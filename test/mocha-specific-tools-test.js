@@ -40,7 +40,40 @@ describe('Github Octocat Profile', function(){
     describe('Avatar', () => {
         this.timeout(15000);
         it('Exists', (done) => {
-            setTimeout(done, 10000);
+            request({uri:'http://github.com/octocat'}, function (err, res, body) {
+                jsdom.env({
+                    html: res.body,
+                    scripts: [
+                    'http://code.jquery.com/jquery-1.5.min.js'
+                    ],
+                    done: function (err, window) {
+                        console.log('inside done block');
+                        let $ = window.jQuery;
+                        let avatar = $('.vcard-avatar').html();
+                        expect(avatar).to.exist;
+                        done();
+                }});
+            });
+        });
+
+        it('Is contained within an image tag', (done) => {
+            request({uri:'http://github.com/octocat'}, function (err, res, body) {
+                jsdom.env({
+                    html: res.body,
+                    scripts: [
+                    'http://code.jquery.com/jquery-1.5.min.js'
+                    ],
+                    done: function (err, window) {
+                        console.log('inside done block');
+                        let $ = window.jQuery;
+                        let avatar = $('.vcard-avatar').html();
+                        expect(avatar).to.include('<img');
+                        done();
+                }});
+            });
+        });
+
+        it('Is contained within an image tag', (done) => {
             request({uri:'http://github.com/octocat'}, function (err, res, body) {
                 jsdom.env({
                     html: res.body,
