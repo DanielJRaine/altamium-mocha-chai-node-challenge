@@ -27,6 +27,7 @@
     "mochawesome": "^1.5.4",
     "phantom": "^3.2.0",
     "phantomjs-prebuilt": "^2.1.13",
+    "request": "^2.79.0",
     "uuid": "^3.0.1",
     "webpage": "^0.3.0"
   },
