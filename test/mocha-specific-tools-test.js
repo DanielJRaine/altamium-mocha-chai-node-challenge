@@ -12,7 +12,7 @@ let chai = require('chai'),
     chaiAsPromised = require('chai-as-promised'),
     request = require('request'),
     httpUtils = require('request-mocha')(request),
-    jsdom = require('mocha-jsdom'),
+    jsdom = require('jsdom').jsdom,
     expect = chai.expect,
     should = chai.should;
 
@@ -22,7 +22,6 @@ describe('Github Developer API', function(){
     describe('GET /users/:username/repos', () => {
         this.timeout(15000);
         it('Lists all public repositories for the specified user.', (done) => {
-            setTimeout(done, 10000);
             chai.request('https://api.github.com')
                     .get('/users/octocat/repos')
                     .then((res) => {
@@ -39,28 +38,23 @@ describe('Github Developer API', function(){
 
 describe('Github Octocat Profile', function(){
     describe('Avatar', () => {
-        let avatar;
-        request({ uri:'http://github.com/octocat' }, function (error, response, body) {
-            if (error && response.statusCode !== 200) {
-                console.log('Error when contacting github.com')
-            }
-
-            jsdom.env({
-                html: body,
-                scripts: [
-                'http://code.jquery.com/jquery-1.5.min.js'
-                ],
-                done: function (err, window) {
-                let $ = window.jQuery;
-                avatar = $('.vcard-avatar').html();
-                console.log(avatar);
-            }});
-        });
+        this.timeout(15000);
         it('Exists', (done) => {
-            this.timeout(10000);
-            avatar.should.exist;
-            expect(avatar).to.include('<imug');
-            done();
+            setTimeout(done, 10000);
+            request({uri:'http://github.com/octocat'}, function (err, res, body) {
+                jsdom.env({
+                    html: res.body,
+                    scripts: [
+                    'http://code.jquery.com/jquery-1.5.min.js'
+                    ],
+                    done: function (err, window) {
+                        console.log('inside done block');
+                        let $ = window.jQuery;
+                        let avatar = $('.vcard-avatar').html();
+                        expect(avatar).to.include('<img');
+                        done();
+                }});
+            });
         });
     });
 });
